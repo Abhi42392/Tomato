@@ -8,7 +8,7 @@ const GlobalContext = ({children}) => {
     const[category,setCategory]=useState("All");
     const[showLogin,setShowLogin]=useState(false);
     const[token,setToken]=useState(null);
-    const url="http://localhost:4000/"
+    const url="https://tomato-qpby.onrender.com/"
     const addToCart=async(itemId)=>{
         
         if(!cartItems[itemId]){
