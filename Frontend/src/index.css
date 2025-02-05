@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dot{
+    min-width: 8px;
+    min-height: 8px;
+    border-radius: 5px;
+    background-color: tomato;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+.header-top{
+    background-image: url("./assets/frontend_assets/header_img.png");
+    background-position: center;
+    background-size: cover;
+}
+.header-content{
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+.menu-list::-webkit-scrollbar{
+    display: none;
+}
+.food-item{
+    transition: transform 0.3s ease;
+}
+.food-item:hover{
+    transform: scale(1.05);
+}
+.food-image{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.price{
+    color: tomato;
+   
+}
